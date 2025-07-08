@@ -1,240 +1,208 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LuckyDay - Rummy</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WinPlay Arena - 30% Welcome Bonus</title>
 
   <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1222170052551853');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1222170052551853&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1222170052551853');
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1222170052551853&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17321452614"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17321452614');
+  </script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17321452614"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17321452614');
-</script>
-
-  
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #0b0c10;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://i.postimg.cc/NMXf40XX/Whats-App-Image-2025-07-08-at-12-43-39-PM.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #fff;
+      text-align: center;
+      position: relative;
     }
-    header {
-      background: #1f2833;
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+      margin: auto;
       padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
     }
-    .logo-container {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-    .logo-image {
-      width: 50px;
-      height: 50px;
+    .circle-img {
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
-      border: 2px solid #ffd700;
+      overflow: hidden;
+      margin: 30px auto 20px;
+      border: 5px solid #9b59b6;
+      box-shadow: 0 0 20px #9b59b6;
+      animation: glow 2s infinite ease-in-out;
     }
-    .logo {
-      font-size: 28px;
-      font-weight: 600;
-      color: #ffd700;
-      animation: glow 1.5s ease-in-out infinite alternate;
+    .circle-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
     @keyframes glow {
-      from {
-        text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
-      }
-      to {
-        text-shadow: 0 0 20px #fff700, 0 0 30px #ffef00;
-      }
+      0% { box-shadow: 0 0 10px #9b59b6, 0 0 20px #9b59b6; }
+      50% { box-shadow: 0 0 25px #bb6bd9, 0 0 35px #a55eea; }
+      100% { box-shadow: 0 0 10px #9b59b6, 0 0 20px #9b59b6; }
     }
-    .nav-buttons a {
-      color: #fff;
-      text-decoration: none;
-      background: #45a29e;
-      padding: 10px 15px;
-      border-radius: 5px;
+    h1 {
+      color: #ffccff;
+      font-size: 28px;
     }
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-      background: url('https://images.unsplash.com/photo-1589739905270-63b4f3d26629') center/cover no-repeat;
-    }
-    .hero h1 {
-      font-size: 40px;
-      color: #ffd700;
-      margin-bottom: 10px;
-      animation: glow 1.5s ease-in-out infinite alternate;
-    }
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-    .cta {
-      background: #ffd700;
-      color: #0b0c10;
-      padding: 15px 30px;
+    .highlight {
+      font-size: 20px;
       font-weight: bold;
-      font-size: 18px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      animation: pulse 1.5s infinite;
+      color: #90caf9;
     }
-    .cta-link {
-      text-decoration: none;
+    .bonus-box {
+      background: rgba(255, 243, 205, 0.9);
+      color: #333;
+      border-left: 6px solid #ffc107;
+      padding: 15px;
+      margin: 20px 0;
+      font-size: 18px;
+      border-radius: 8px;
+    }
+    .pulse {
+      animation: pulse 1.8s infinite;
     }
     @keyframes pulse {
       0% {
         transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7);
+        box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7);
       }
       70% {
-        transform: scale(1.05);
-        box-shadow: 0 0 0 10px rgba(255, 215, 0, 0);
+        transform: scale(1.1);
+        box-shadow: 0 0 0 15px rgba(40, 167, 69, 0);
       }
       100% {
         transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+        box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
       }
     }
-    section {
-      padding: 40px 20px;
-      text-align: center;
+    .cta-button {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 14px 30px;
+      margin-top: 20px;
+      border-radius: 35px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
     }
-    .features {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 20px;
+    .game-text {
+      font-weight: bold;
+      color: #ffd6e7;
     }
-    .feature {
-      background: #1f2833;
-      padding: 20px;
-      border-radius: 10px;
-      flex: 1 1 200px;
+    .footer {
+      font-size: 13px;
+      color: #ccc;
+      margin-top: 40px;
     }
-    .whatsapp-button {
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .whatsapp-float {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #25d366;
-      color: white;
-      border: none;
-      border-radius: 50px;
-      padding: 14px 24px;
-      font-size: 18px;
-      font-weight: bold;
-      text-decoration: none;
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      animation: pulse 2s infinite;
+      z-index: 999;
+      background-color: #25D366;
+      padding: 10px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #25D366;
+      transition: transform 0.3s;
+      animation: pulse 1.8s infinite;
     }
-    .whatsapp-button img {
-      height: 28px;
-      width: 28px;
+    .whatsapp-float:hover {
+      transform: scale(1.1);
     }
-    footer {
-      background: #1f2833;
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
-      color: #aaa;
+    .whatsapp-float img {
+      width: 40px;
+      height: 40px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo-container">
-      <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Lucky Icon" class="logo-image" />
-      <div class="logo">🎰 LuckyDay</div>
+  <div class="container">
+    <div class="circle-img">
+      <img src="https://i.postimg.cc/FKX1fc8S/Whats-App-Image-2025-07-08-at-12-43-39-PM-1.jpg" alt="WinPlay Image" />
     </div>
-    <div class="nav-buttons">
-      <a href="https://api.whatsapp.com/send?phone=919990746808" target="_blank">Register</a>
-    </div>
-  </header>
 
-  <div class="hero">
-    <h1>Play & Earn Rewards</h1>
-    <p>Get 30% Welcome Bonus on Your First Deposit!</p>
-    <a class="cta-link" href="https://api.whatsapp.com/send?phone=919990746808" target="_blank">
-      <button class="cta">Play Now</button>
+    <h1>🎲 Welcome to <strong>WinPlay Arena</strong></h1>
+    <p class="highlight">India's No. 1 Gaming ID Provider</p>
+
+    <a href="https://api.whatsapp.com/send?phone=919990746808&text=I%20am%20Interested.&utm_source=facebook&utm_medium=ads&utm_campaign=winplay" onclick="showThankYou(); fbq('track', 'Lead');" target="_blank">
+      <div class="bonus-box pulse">
+        🎁 <strong>30% Bonus on Your First Deposit!</strong><br/>
+        Boost your wallet instantly. Get up to ₹3,000 extra!
+      </div>
     </a>
+
+    <a href="https://api.whatsapp.com/send?phone=919990746808&text=I%20am%20Interested.&utm_source=facebook&utm_medium=ads&utm_campaign=winplay" onclick="showThankYou(); fbq('track', 'Lead');" target="_blank">
+      <p><span class="game-text pulse">🃏 Play Teen Patti, Poker, Slots, Rummy & More</span><br/>
+      ⚡ Fast Withdrawals | 🔐 100% Secure | 📱 Play Anywhere</p>
+    </a>
+
+    <a class="cta-button pulse" href="https://api.whatsapp.com/send?phone=919990746808&text=I%20am%20Interested.&utm_source=facebook&utm_medium=ads&utm_campaign=winplay" onclick="showThankYou(); fbq('track', 'Lead');" target="_blank">
+      Register
+    </a>
+
+    <div id="thank-you" style="display:none; margin-top: 20px; font-size: 18px; color: #a2f5a2;">
+      ✅ धन्यवाद! हमने WhatsApp खोल दिया है — हमारी टीम जल्द संपर्क करेगी।
+    </div>
+
+    <p class="footer">
+      ⚠️ For 18+ Users Only | Play Responsibly<br/>
+      Licensed by [Your Licensing Authority]<br/>
+      © 2025 WinPlay Arena
+    </p>
   </div>
 
-  <section>
-    <h2>Why Thousands Choose Us</h2>
-    <div class="features">
-      <div class="feature">✅ Instant Withdrawals</div>
-      <div class="feature">✅ 24x7 Support</div>
-      <div class="feature">✅ 1000+ Live Games</div>
-      <div class="feature">✅ 100% Safe & Licensed</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Popular Games</h2>
-    <div class="features">
-      <div class="feature">🃏 Rummy</div>
-      <div class="feature">🎯 Ludo</div>
-      <div class="feature">🃎 Call Break</div>
-      <div class="feature">🧠 Quiz Battle</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Welcome Offer</h2>
-    <p>Register Now & Get 30% Welcome Bonus on First Deposit!</p>
-    <a class="cta-link" href="https://api.whatsapp.com/send?phone=919990746808" target="_blank">
-      <button class="cta">Claim Bonus</button>
-    </a>
-  </section>
-
-  <section>
-    <h2>Download the App</h2>
-    <p>Fast, Safe & Lightweight</p>
-    <a class="cta-link" href="https://api.whatsapp.com/send?phone=919990746808" target="_blank">
-      <button class="cta">Download Now</button>
-    </a>
-  </section>
-
-  <a class="whatsapp-button" href="https://api.whatsapp.com/send?phone=919990746808" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" />
-    Chat with Us
+  <!-- Floating WhatsApp Button -->
+  <a href="https://api.whatsapp.com/send?phone=919990746808&text=I%20am%20Interested.&utm_source=facebook&utm_medium=ads&utm_campaign=winplay" onclick="showThankYou(); fbq('track', 'Lead');" target="_blank" class="whatsapp-float pulse" title="Chat on WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp" />
   </a>
 
-  <footer>
-    <p>© 2025 LuckyDay. All rights reserved. | Terms & Conditions | Responsible Gaming</p>
-  </footer>
+  <script>
+    function showThankYou() {
+      document.getElementById('thank-you').style.display = 'block';
+    }
+  </script>
 </body>
 </html>
