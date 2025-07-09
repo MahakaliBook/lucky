@@ -18,6 +18,7 @@
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '1222170052551853');
   fbq('track', 'PageView');
+  fbq('track', 'ViewContent'); // Added ViewContent on load
   </script>
   <noscript>
     <img height="1" width="1" style="display:none"
@@ -194,14 +195,18 @@
     </p>
   </div>
 
-  <!-- Floating WhatsApp Button -->
   <a href="https://api.whatsapp.com/send?phone=919990746808&text=I%20am%20Interested.&utm_source=facebook&utm_medium=ads&utm_campaign=winplay" onclick="showThankYou(); fbq('track', 'Lead');" target="_blank" class="whatsapp-float pulse" title="Chat on WhatsApp">
     <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp" />
   </a>
 
   <script>
+    function trackInitiateCheckout() {
+      fbq('track', 'InitiateCheckout');
+    }
+
     function showThankYou() {
       document.getElementById('thank-you').style.display = 'block';
+      trackInitiateCheckout();
     }
   </script>
 </body>
